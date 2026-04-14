@@ -12,3 +12,9 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>Y", "\"+Y")
+
+-- Arrow keys are for dummies
+vim.keymap.set({"n", "i", "v"}, "<UP>", "<nop>")
+vim.keymap.set({"n", "i", "v"}, "<DOWN>", "<nop>")
+vim.keymap.set({"n", "i", "v"}, "<LEFT>", "<nop>")
+vim.keymap.set({"n", "i", "v"}, "<RIGHT>", "<nop>")
