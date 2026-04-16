@@ -13,6 +13,8 @@ vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>Y", "\"+Y")
 
+vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename)
+
 -- Arrow keys are for dummies
 vim.keymap.set({"n", "i", "v"}, "<UP>", "<nop>")
 vim.keymap.set({"n", "i", "v"}, "<DOWN>", "<nop>")

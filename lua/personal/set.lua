@@ -40,3 +40,6 @@ vim.opt.updatetime = 50
 vim.g.mapleader = " "
 
 vim.opt.winborder = "rounded"
+
+-- Why would you need a mouse?
+vim.opt.mouse = ""
