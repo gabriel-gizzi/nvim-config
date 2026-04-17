@@ -1,4 +1,4 @@
 return {
-    "ThePrimeagen/vim-be-good",
+    "gabriel-gizzi/vim-be-good-v2",
     cmd = "VimBeGood",
 }

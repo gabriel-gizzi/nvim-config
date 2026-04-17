@@ -1,4 +1,6 @@
-vim.lsp.enable('luals')
+vim.lsp.enable('lua_ls')
 vim.lsp.enable('clangd')
 vim.lsp.enable('rust_analyzer')
 vim.lsp.enable('basedpyright')
+vim.lsp.enable('vimls')
+vim.lsp.enable('vimdoc_ls')
