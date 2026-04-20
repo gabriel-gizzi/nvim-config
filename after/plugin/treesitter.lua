@@ -4,7 +4,7 @@ require('nvim-treesitter').setup {
 }
 require('nvim-treesitter').install({ 'c', 'cpp', 'rust',
 'javascript', 'html', 'css', 'java', 'c_sharp', 'python',
-'lua', 'json', 'vim', 'asm' })
+'lua', 'json', 'vim', 'asm', 'bash', 'zig' })
 vim.api.nvim_create_autocmd('FileType', {
   pattern = { '<filetype>' },
   callback = function() vim.treesitter.start() end,
