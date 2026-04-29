@@ -15,8 +15,14 @@ vim.keymap.set("n", "<leader>Y", "\"+Y")
 
 vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename)
 
+vim.api.nvim_set_keymap('n', '<leader>gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', { noremap = true, silent = true })
+
+-- Disable highlight on searches after pressing ESC
+vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+
 -- Arrow keys are for dummies
 vim.keymap.set({"n", "i", "v"}, "<UP>", "<nop>")
 vim.keymap.set({"n", "i", "v"}, "<DOWN>", "<nop>")
 vim.keymap.set({"n", "i", "v"}, "<LEFT>", "<nop>")
 vim.keymap.set({"n", "i", "v"}, "<RIGHT>", "<nop>")
+
