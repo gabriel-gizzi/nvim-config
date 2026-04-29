@@ -3,3 +3,13 @@ vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find f
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
+-- Find word
+vim.keymap.set('n', '<leader>fw', function()
+    local word = vim.fn.expand("<cword>")
+    builtin.live_grep({ default_text = word })
+end)
+-- Find WORD
+vim.keymap.set('n', '<leader>fW', function()
+    local word = vim.fn.expand("<cWORD>")
+    builtin.live_grep({ default_text = word })
+end)
